@@ -1,0 +1,10 @@
+{
+  "cors": "*",
+  "directory": "/app/current/shared",
+  "expire internal cache": "1 day",
+  "max age": "2 days",
+  "port": 8080,
+  "plugins": [
+    "logger"
+  ]
+}

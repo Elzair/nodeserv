@@ -12,5 +12,8 @@
     "cdn"
   ],
   "author": "Philip Woods",
-  "license": "Internal"
+  "license": "Internal",
+  "dependencies": {
+    "versions": "~0.2.2"
+  }
 }
