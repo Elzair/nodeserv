@@ -9,6 +9,7 @@ app = connect()
 app.use('/assets', Mincer.createServer(environment))
 app.use((req, res) ->
   # your application here...
+  res.end()
 )
 
 app.listen(3000, (err) ->
