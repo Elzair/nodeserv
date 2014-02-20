@@ -17,6 +17,9 @@
   "author": "Philip Woods",
   "license": "Internal",
   "dependencies": {
-    "connect-assets": "~3.0.0-beta1"
+    "connect-assets": "~3.0.0-beta1",
+    "connect": "~2.13.0",
+    "node-sass": "~0.8.1",
+    "coffee-script": "~1.7.1"
   }
 }
