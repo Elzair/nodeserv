@@ -7,13 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "versions",
+    "connect-assets",
     "static-file-server",
-    "cdn"
+    "cdn",
+    "coffeescript",
+    "sass"
   ],
   "author": "Philip Woods",
   "license": "Internal",
   "dependencies": {
-    "versions": "~0.2.2"
+    "connect-assets": "~3.0.0-beta1"
   }
 }
