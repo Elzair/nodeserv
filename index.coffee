@@ -1,8 +1,20 @@
 connect = require('connect')
-http = require('http')
+Mincer  = require('mincer')
 
-app = connect().use(require('connect-assets')(src: '/app/current/shared/assets', buildDir: '/app/current/shared/assets')).use((req, res) ->
-    res.end('Hello from Connect!\n')
-  )
+environment = new Mincer.Environment()
+environment.appendPath('/app/current/app/assets/javascripts')
+environment.appendPath('/app/current/app/assets/stylesheets')
 
-http.createServer(app).listen(3000)
+app = connect()
+app.use('/assets', Mincer.createServer(environment))
+app.use((req, res) ->
+  # your application here...
+)
+
+app.listen(3000, (err) ->
+  if (err) 
+    console.error("Failed start server: " + (err.message || err.toString()))
+    process.exit(128)
+
+  console.info('Listening on localhost:3000')
+)
