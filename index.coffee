@@ -4,6 +4,7 @@ Mincer  = require('mincer')
 environment = new Mincer.Environment()
 environment.appendPath('/app/current/app/assets/javascripts')
 environment.appendPath('/app/current/app/assets/stylesheets')
+environment.appendPath('/app/current/app/assets/images')
 
 app = connect()
 app.use('/assets', Mincer.createServer(environment))
